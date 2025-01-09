@@ -1,0 +1,13 @@
+include:
+  - /submodules/alpin_demo/compose_copy.yaml
+
+# The Profile and build url are set in the submodule additional compose file
+services:
+  example-service:
+    image: alpine
+    command: ["echo", "Hello from Alpine"]
+
+  oder-services:
+    extends:
+      file: /submodules/alpin_demo/compose.yaml
+      service: [example-service-sub1, example-service-sub2]

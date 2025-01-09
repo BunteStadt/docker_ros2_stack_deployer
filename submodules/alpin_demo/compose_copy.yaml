@@ -1,0 +1,5 @@
+services:
+  example-service-sub:
+    image: alpine
+    command: ["echo", "Hello from Submodule Copy Alpine"]
+      

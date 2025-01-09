@@ -1,0 +1,11 @@
+services:
+  example-service-sub1:
+    image: alpine
+    command: ["echo", "Hello from Submodule 1 Alpine"]
+  example-service-sub2:
+    image: alpine
+    command: ["echo", "Hello from Submodule 2 Alpine"]
+  example-service-sub3:
+    image: alpine
+    command: ["echo", "Hello from Submodule 3 Alpine"]
+      
